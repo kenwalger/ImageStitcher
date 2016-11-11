@@ -8,5 +8,5 @@ To install
 
 To use
 
-```python stitch.py --first left_image.jpg --second right_image.jpg```
+```python stitch.py --first <left-image> --second <right-image>```
 

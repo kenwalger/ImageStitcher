@@ -16,6 +16,8 @@ args = vars(parser.parse_args())
 
 image_A = cv2.imread(args['first'])
 image_B = cv2.imread(args['second'])
+image_A = imutils.resize(image_A, width=400)
+image_B = imutils.resize(image_B, width=400)
 
 stitcher = Stitcher()
 (result, visualization) = stitcher.stitch([image_A, image_B], show_matches=True)
