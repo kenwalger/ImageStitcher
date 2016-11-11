@@ -7,9 +7,10 @@ To install
 ```pip install -r requirements.txt```
 
 OpenCV 3.1.0 has more installation requirements than just:
+
 ```pip install opencv-python```
 
-Depending on your operating system and Python version additional 
+depending on your operating system and Python version. Additional 
 installation steps _may_ be required.
 
 To use
