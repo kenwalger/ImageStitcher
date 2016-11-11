@@ -92,3 +92,8 @@ ENV/
 # Rope project settings
 .ropeproject
 
+Include/
+Scripts/
+pip-selfcheck.json
+pyvenv.cfg
+Lib/

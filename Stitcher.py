@@ -69,12 +69,12 @@ class Stitcher:
                 matches.append((match[0].trainIdx, match[0].queryIdx))
 
             if len(matches) > 4:
-                points_A = numpy.float32([key_points_a[i] for (_,
+                points_a = numpy.float32([key_points_a[i] for (_,
                                                                i) in matches])
                 points_b = numpy.float32([key_points_b[i] for (i,
                                                                _) in matches])
                 (homography_matrix, status) = \
-                    cv2.findHomography(points_A,
+                    cv2.findHomography(points_a,
                                        points_b,
                                        cv2.RANSAC,
                                        reprojection_threshold
